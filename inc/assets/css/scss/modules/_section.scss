@@ -1,0 +1,259 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-abr-2014, 19:04:49
+    Author     : Javier Arques
+*/
+
+.section{
+    
+    // GENERAL
+    //--------------------------------------------------------------
+    padding: rem-calc(60) 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+
+    .section-title{
+        //font-size: rem-calc(50);
+        margin-bottom: rem-calc(30);
+    }
+    .section-bar{
+        background: $color-dark;
+        color: $color-milk;
+        font-size: rem-calc(34);
+        margin: rem-calc(-60) 0 rem-calc(40) 0;
+        line-height: 200%;
+        text-align: center;      
+        display: block;
+        overflow: hidden;
+    }
+    .section-content p{
+        font-size: rem-calc(19);
+        font-weight: 400;
+        
+        .home & {
+            font-size: rem-calc(22);
+        }
+    }
+    p:last-child{
+        margin-bottom: 0;
+    }
+    
+    // MODIFIERS
+    //--------------------------------------------------------------
+    &.milk{
+        background: $color-milk;
+        
+        
+        .home & {
+            p{
+                font-size: rem-calc(22);
+                font-weight: 300;
+            }
+        }
+
+        
+        .section-title{
+            color: $color-coffee;
+        }
+    }
+    
+    // cofee
+    //----------------
+    &.coffee{
+        
+        color: $color-milk;
+        background: $color-coffee;
+        
+        p{
+            font-style: normal;
+            font-weight: 400;
+        }
+        
+        .section-title{
+            color: #FFF;
+        }
+    }
+    
+    // salad
+    //----------------
+    &.salad{
+        background: $color-salad-clear;
+        
+        form{
+            text-align: left;
+            
+            label{
+                color: $color-coffee;
+                font-style: italic;
+                font-size: rem-calc(16);
+                text-align: left;
+            }
+            input[type="tel"],
+            input[type="text"],
+            input[type="email"]{
+                border-color: #43392D;
+                background: transparent;
+                box-shadow: none;
+                
+                &:focus{
+                    border-color: #43392D;
+                    background: #FFF;
+                }
+            }
+        }
+
+    }
+    
+   // glass
+    //----------------
+    &.dark{
+        background: $color-dark;
+        color: #CCC;
+        
+        .section-title{
+            color: $color-milk;
+        }
+        
+        a{
+            color: $color-milk;
+        }
+    }
+    
+    // blackboard
+    //----------------
+    &.blackboard{
+        background-image: url('../img/backgrounds/blackboard.jpg');
+
+        form{
+            border: rem-calc(10) solid #C7C3BF;
+            text-align: left;
+            
+            @media #{$medium-up}{
+                border-width: rem-calc(20);
+            }
+            
+            padding: rem-calc(40) rem-calc(20) 0 rem-calc(20);
+            color: #757573;
+            
+            label{
+                color: #757573;
+                font-size: 17px;
+                font-style: italic;
+                text-align: left;
+            }
+            input[type="tel"],
+            input[type="text"],
+            input[type="email"]{
+                border: none;
+                border-bottom: 1px solid #CCC;
+                background: transparent;
+                box-shadow: none;
+                font-style: italic;
+                
+                @include placeholder {
+                  color: #C5C3BF;
+                  font-size: 17px;
+                  font-style: italic;
+                }
+                
+                &:focus{
+                    border-color: #43392D;
+                    background: #FFF;
+                }
+            }
+            
+            input[type="submit"]{
+                margin-top: rem-calc(40);
+                background: rgba(#CCCCCC, 0.2);
+                border: 1px solid #fff;
+ 
+                
+                &:hover{
+                    background: rgba(#333, 0.6);
+                }
+            }
+            
+            
+            span.wpcf7-list-item {
+                float: left;
+                margin-left: 0.5em;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    
+    // wood
+    //----------------
+    &.wood{
+        background-image: url('../img/backgrounds/wood.jpg');
+        background-repeat: repeat;
+    }
+    
+    // brick
+    //----------------
+    &.brick{
+        background: url(../img/backgrounds/brick.jpg);
+        background-position: center;
+        padding: rem-calc(40) 0 rem-calc(10) 0;
+    }
+    
+    // glass
+    //----------------
+    
+    &.glass{
+        background-image: url('../img/images/panaria-glass.jpg');
+
+        
+        
+        padding: rem-calc(100) 0;
+        
+        // background
+        
+            
+        &:after{
+            content: '';
+            height: 110px;
+            margin-top: 40px;
+            display: block;
+            width: 100%;
+            background-image: url('../img/logo-shadow.png');
+            background-repeat: repeat-x;
+        }
+        
+        // menu
+        
+        .menu{
+            border: 5px solid #F2EDEA;
+            padding: 3%;
+            color: #FFF;
+            border-radius: 3px;
+            
+            font-family: 'Belta';
+            font-size: rem-calc(40);
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+            
+            .menu-title{
+                font-family: 'Belta';
+                color: #FFF;
+                font-size: rem-calc(48);
+                text-decoration: underline;
+            }
+            .menu-content{
+                font-size: rem-calc(40);
+                margin-bottom: rem-calc(5);
+            }
+            .menu-total{
+                font-size: rem-calc(48);
+                margin: 0;
+            }
+        }
+    }
+    
+}
+

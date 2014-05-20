@@ -1,0 +1,31 @@
+/*
+    Helpers
+
+*/
+
+// TEXT
+//-----------------------------------------------------------------------------
+
+// font styles
+.text-italic{
+    font-style: italic;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+// text colors
+
+
+
+
+// INLINE LISTS
+//-----------------------------------------------------------------------------
+.inline-list{
+    list-style: none;
+    display: block;
+
+    li{
+        display: inline-block;
+    }
+}

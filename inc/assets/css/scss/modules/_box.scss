@@ -1,0 +1,48 @@
+/**
+ box module
+ */
+.box{
+    padding: rem-calc(25);
+    text-align: center;
+    
+    @media #{$medium-up}{
+        min-height: 479px;
+    }
+    
+    &.dark{
+        background-color: $color-dark;
+    }
+    &.salad{
+        background-color: $color-salad-clear;
+        color: #393939;
+        
+    }
+    &.coffee{
+        background-color: $color-coffee;
+        color: #FFF;
+    }
+    iframe{
+        background: #FFF;
+        width: 100%;
+    }
+    .box-title{
+        margin-top: rem-calc(15);
+        margin-bottom: rem-calc(5);
+    }
+    .box-content{
+        margin-bottom: 0;
+    }
+    h5, h6{
+        color: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h6{
+        font-size: rem-calc(19);
+
+        text-align: center;
+        max-width: 80%;
+        line-height: 1.6;
+        color: inherit;
+    }
+}

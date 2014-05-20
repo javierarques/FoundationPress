@@ -32,12 +32,12 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-  <?php do_action('foundationPress_after_body'); ?>
+  <?php do_action('theme_after_body'); ?>
   
   <div class="off-canvas-wrap">
   <div class="inner-wrap">
   
-  <?php do_action('foundationPress_layout_start'); ?>
+  <?php do_action('theme_layout_start'); ?>
   
   <nav class="tab-bar show-for-small-only">
     <section class="left-small">
@@ -51,7 +51,7 @@
   </nav>
 
   <aside class="left-off-canvas-menu">
-    <?php foundationPress_mobile_off_canvas(); ?>
+    <?php theme_off_canvas_menu(); ?>
   </aside>
   
         <div class="top-bar-container contain-to-grid show-for-medium-up">
@@ -62,8 +62,7 @@
                     </li>          
                 </ul>
                 <section class="top-bar-section">
-                    <?php foundationPress_top_bar_l(); ?>
-                    <?php foundationPress_top_bar_r(); ?>
+                    <?php theme_top_bar_menu(); ?>
                 </section>
             </nav>
         </div>
@@ -77,5 +76,5 @@
 </header>
 
 <section class="container" role="document">
-  <?php do_action('foundationPress_after_header'); ?>
+  <?php do_action('theme_after_header'); ?>
   <div class="row">
