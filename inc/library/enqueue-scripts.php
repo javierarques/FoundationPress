@@ -21,8 +21,9 @@ function theme_scripts() {
   
   
   /**
-   * MAPA
+   * MAP
    */
+    /*
   if ( is_page('tiendas')) {
     // Register the script first.
     wp_register_script( 'map', THEME_JS .'/app/map.js', array('jquery'), false, true);
@@ -35,7 +36,7 @@ function theme_scripts() {
     // The script can be enqueued now or later.
     wp_enqueue_script( 'map' );
   }
-  
+  */
 
 
 }

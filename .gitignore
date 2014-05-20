@@ -2,4 +2,5 @@
 inc/assets/node_modules/
 inc/assets/bower_components/
 inc/assets/js/vendor/
+inc/assets/js/build/
 

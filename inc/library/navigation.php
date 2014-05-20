@@ -8,7 +8,7 @@ register_nav_menus(array(
     'top-bar' => 'Top bar',
     'footer' => 'Footer',
     'mobile-off-canvas' => 'Mobile',
-    'legal' => 'Enlaces legales'
+    'legal' => 'Bottom link'
 ));
 
 
