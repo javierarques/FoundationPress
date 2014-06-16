@@ -1,0 +1,23 @@
+//
+// Ads module
+//
+
+.ads{
+  display: block;
+
+  border: 1px solid #CCC;
+
+  &::after{
+    content: 'PUBLICIDAD';
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+
+  // leaderboard 728x60
+  .leaderboard{
+
+  }
+
+
+}
